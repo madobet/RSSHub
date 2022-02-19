@@ -188,6 +188,9 @@
     "/ddosi/category/:category": [
         "XinRoom"
     ],
+    "/disinfo/publications": [
+        "nczitzk"
+    ],
     "/distill/": [
         "nczitzk"
     ],
@@ -820,6 +823,18 @@
     "/oncc/:language/:channel?": [
         "Fatpandac"
     ],
+    "/panewslab/column/:id": [
+        "nczitzk"
+    ],
+    "/panewslab/newsflash/:language?": [
+        "nczitzk"
+    ],
+    "/panewslab/topic/:id": [
+        "nczitzk"
+    ],
+    "/panewslab/:category?": [
+        "nczitzk"
+    ],
     "/people/cpc/24h": [
         "nczitzk"
     ],
@@ -1109,6 +1124,9 @@
     ],
     "/wenku8/chapter/:id": [
         "zsakvo"
+    ],
+    "/whitehouse/briefing-room/:category?": [
+        "nczitzk"
     ],
     "/whoscall/": [
         "nczitzk"
