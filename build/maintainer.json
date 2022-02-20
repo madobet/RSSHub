@@ -74,7 +74,13 @@
     "/audiobar/latest": [
         "zxzhuty"
     ],
+    "/bandcamp/tag/:tag?": [
+        "nczitzk"
+    ],
     "/bandcamp/live": [
+        "nczitzk"
+    ],
+    "/bandcamp/weekly": [
         "nczitzk"
     ],
     "/baozimh/comic/:name": [
@@ -143,6 +149,9 @@
         "kt286"
     ],
     "/chaoxing/qk/:id/:needContent?": [
+        "nczitzk"
+    ],
+    "/ciidbnu/:id?": [
         "nczitzk"
     ],
     "/cnbeta/": [
@@ -826,6 +835,9 @@
     "/oncc/:language/:channel?": [
         "Fatpandac"
     ],
+    "/orcid/:id": [
+        "OrangeEd1t"
+    ],
     "/panewslab/column/:id": [
         "nczitzk"
     ],
@@ -920,6 +932,12 @@
     "/shopback/:store": [
         "nczitzk"
     ],
+    "/sicau/dky/:category?": [
+        "nczitzk"
+    ],
+    "/sicau/yan/:category?": [
+        "nczitzk"
+    ],
     "/sicau/zsjy/:category?": [
         "nczitzk"
     ],
@@ -1007,6 +1025,9 @@
     ],
     "/timednews/news/:type?": [
         "linbuxiao"
+    ],
+    "/tisi/latest": [
+        "Fatpandac"
     ],
     "/topys/:keyword?": [
         "nczitzk"
@@ -1158,6 +1179,13 @@
     "/xaut/rsc/:category?": [
         "mocusez",
         "light0926"
+    ],
+    "/xiaoyuzhou/": [
+        "prnake",
+        "Maecenas"
+    ],
+    "/xiaoyuzhou/podcast/:id": [
+        "hondajojo"
     ],
     "/yaohuo/": [
         "nczitzk"
@@ -2661,7 +2689,6 @@
     "/newrank/douyin/:dyid": [],
     "/manxiaosi/book/:id": [],
     "/jlu/oa": [],
-    "/xiaoyuzhou": [],
     "/hfut/tzgg": [],
     "/darwinawards/all": [],
     "/scvtc/xygg": [],
@@ -2990,7 +3017,6 @@
     "/wanwansub/:id?": [],
     "/zimuxia/portfolio/:id": [],
     "/zimuxia/:category?": [],
-    "/bandcamp/tag/:tag?": [],
     "/hugo/releases": [],
     "/tongli/news/:type": [],
     "/or/:id?": [],
