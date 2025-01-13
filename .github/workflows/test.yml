@@ -1,17 +1,23 @@
-name: test
+name: Test
 
 on:
   push:
     branches-ignore:
       - 'dependabot/**'
-  pull_request: ~
+    paths:
+      - 'lib/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/test.yml'
+  pull_request: {}
 
 permissions:
-  contents: read
+  checks: write
 
 jobs:
-  jest:
+  vitest:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     services:
       redis:
         image: redis
@@ -19,59 +25,75 @@ jobs:
           - 6379/tcp
         options: --entrypoint redis-server
     strategy:
+      fail-fast: false
       matrix:
-        node-version: [ 14, 16 ]
-    name: Jest on Node ${{ matrix.node-version }}
+        node-version: [ latest, lts/*, lts/-1 ]
+    name: Vitest on Node ${{ matrix.node-version }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - name: Install dependencies (yarn)
-        run: yarn
+          cache: 'pnpm'
+      - name: Install dependencies (pnpm)
+        run: pnpm i
+      - name: Run postinstall script for dependencies
+        run: pnpm rb
+      - name: Build routes
+        run: pnpm build
       - name: Test all and generate coverage
-        run: npm run jest:coverage
+        run: pnpm run vitest:coverage --reporter=github-actions
         env:
           REDIS_URL: redis://localhost:${{ job.services.redis.ports[6379] }}/
       - name: Upload coverage to Codecov
-        if: ${{ matrix.node-version == '16' }}
-        uses: codecov/codecov-action@v3
+        if: ${{ matrix.node-version == 'lts/*' }}
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos as documented, but seems broken
 
   puppeteer:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 14, 16 ]
+        node-version: [ latest, lts/*, lts/-1 ]
         chromium:
           - name: bundled Chromium
             dependency: ''
-            environment: '{}'
+            environment: '{ "PUPPETEER_SKIP_DOWNLOAD": "0" }'
           - name: Chromium from Ubuntu
             dependency: chromium-browser
-            environment: '{ "CHROMIUM_EXECUTABLE_PATH": "chromium-browser" }'
+            environment: '{ "PUPPETEER_SKIP_DOWNLOAD": "1" }'
           - name: Chrome from Google
             dependency: google-chrome-stable
-            environment: '{ "CHROMIUM_EXECUTABLE_PATH": "google-chrome-stable" }'
-    name: Jest puppeteer on Node ${{ matrix.node-version }} with ${{ matrix.chromium.name }}
+            environment: '{ "PUPPETEER_SKIP_DOWNLOAD": "1" }'
+    name: Vitest puppeteer on Node ${{ matrix.node-version }} with ${{ matrix.chromium.name }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - name: Install dependencies (yarn)
-        run: yarn
+          cache: 'pnpm'
+      - name: Install dependencies (pnpm)
+        run: pnpm i
+        env: ${{ fromJSON(matrix.chromium.environment) }}
+      - name: Run postinstall script for dependencies
+        run: pnpm rb
+        env: ${{ fromJSON(matrix.chromium.environment) }}
+      - name: Build routes
+        run: pnpm build
+        env: ${{ fromJSON(matrix.chromium.environment) }}
       - name: Install Chromium
         if: ${{ matrix.chromium.dependency != '' }}
-        # Chromium from Ubuntu is too old (85), but can still pass the tests
-        # That's not really a problem since Chromium-bundled Docker image is based on Debian bullseye,
-        # which updates Chromium frequently, and only on arm/arm64 the image needs Chromium from Debian.
+        # 'chromium-browser' from Ubuntu APT repo is a dummy package. Its version (85.0.4183.83) means
+        # nothing since it calls Snap (disgusting!) to install Chromium, which should be up-to-date.
+        # That's not really a problem since the Chromium-bundled Docker image is based on Debian bookworm,
+        # which provides up-to-date native packages.
         run: |
-          set -ex
+          set -eux
           curl -s "https://dl.google.com/linux/linux_signing_key.pub" | gpg --dearmor |
             sudo tee /etc/apt/trusted.gpg.d/google-chrome.gpg > /dev/null
           echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" |
@@ -79,37 +101,47 @@ jobs:
           sudo apt-get update
           sudo apt-get install -yq --no-install-recommends ${{ matrix.chromium.dependency }}
       - name: Test puppeteer
-        run: npm run jest puppeteer
+        run: |
+          set -eux
+          export CHROMIUM_EXECUTABLE_PATH="$(which ${{ matrix.chromium.dependency }})"
+          pnpm run vitest puppeteer
         env: ${{ fromJSON(matrix.chromium.environment) }}
-
-  docs:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 14, 16 ]
-    name: Build docs on Node ${{ matrix.node-version }}
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - run: yarn
-      - name: Build docs
-        run: npm run docs:build
 
   all:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      attestations: write
     strategy:
+      fail-fast: false
       matrix:
-        node-version: [ 14, 16 ]
+        node-version: [ 23, 22, 20 ]
     name: Build radar and maintainer on Node ${{ matrix.node-version }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - run: yarn
+          cache: 'pnpm'
+      - run: pnpm i
       - name: Build radar and maintainer
-        run: npm run build:all
+        run: npm run build
+      - name: Upload assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-assets-${{ matrix.node-version }}
+          path: assets/build/
+
+  automerge:
+    if: github.triggering_actor == 'dependabot[bot]' && github.event_name == 'pull_request'
+    needs: [ vitest, puppeteer, all ]
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          target: patch
