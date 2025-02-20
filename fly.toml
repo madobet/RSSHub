@@ -1,36 +1,46 @@
-app = "rsshub"
+app = "rssfly"
 kill_signal = "SIGINT"
-kill_timeout = 5
-processes = []
-
-[env]
+kill_timeout = "5s"
+primary_region = "nrt"
 
 [experimental]
 auto_rollback = true
 
-[[services]]
-http_checks = []
-internal_port = 1200
-processes = ["app"]
-protocol = "tcp"
-script_checks = []
+  [experimental.attached]
+  secrets = { }
 
-[services.concurrency]
-hard_limit = 25
-soft_limit = 20
-type = "connections"
-
-[[services.ports]]
+[http_service]
+auto_start_machines = true
+auto_stop_machines = true
 force_https = true
-handlers = ["http"]
-port = 80
+internal_port = 1_200
+min_machines_running = 0
+processes = [ "app" ]
 
-[[services.ports]]
-handlers = ["tls", "http"]
-port = 443
+[[services]]
+internal_port = 1_200
+processes = [ "app" ]
+protocol = "tcp"
 
-[[services.tcp_checks]]
-grace_period = "1s"
-interval = "15s"
-restart_limit = 0
-timeout = "2s"
+  [services.concurrency]
+  hard_limit = 25
+  soft_limit = 20
+  type = "connections"
+
+  [[services.ports]]
+  force_https = true
+  handlers = [ "http" ]
+  port = 80
+
+  [[services.ports]]
+  handlers = [ "tls", "http" ]
+  port = 443
+
+  [[services.tcp_checks]]
+  grace_period = "1s"
+  interval = "15s"
+  timeout = "2s"
+
+[[vm]]
+memory = "512mb"
+size = "shared-cpu-1x"
