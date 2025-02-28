@@ -4223,9 +4223,6 @@
   "/kisskiss/blog/:category?": [
     "keocheung"
   ],
-  "/komiic/comic/:id": [
-    "NekoAria"
-  ],
   "/konachan/post/popular_recent/:period?": [
     "magic-akari",
     "NekoAria"
@@ -7585,9 +7582,6 @@
   ],
   "/wabei/hot-recommend": [
     "p3psi-boo"
-  ],
-  "/wainao/topics/:id?": [
-    "nczitzk"
   ],
   "/wainao/wainao-reads": [
     "lucky13820"
