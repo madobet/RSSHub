@@ -513,7 +513,7 @@
   "/apkpure/versions/:pkg/:region?": [
     "maple3142"
   ],
-  "/apnews/api/:tags?": [
+  "/apnews/mobile/:path{.+}?": [
     "dzx-dzx"
   ],
   "/apnews/rss/:category?": [
@@ -3404,6 +3404,9 @@
   ],
   "/hameln/chapter/:id": [
     "huangliangshusheng"
+  ],
+  "/hanime1/previews/:date": [
+    "kjasn"
   ],
   "/harvard/health/blog": [
     "nczitzk"
@@ -8155,6 +8158,9 @@
   ],
   "/xjtu/yz/:category?": [
     "YoghurtGuy"
+  ],
+  "/xjtu/zs/:category{.+}?": [
+    "nczitzk"
   ],
   "/xjtu/2yuan/news/:id?": [
     "nczitzk"
