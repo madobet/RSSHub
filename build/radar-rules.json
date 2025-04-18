@@ -2909,6 +2909,14 @@
     "_name": "广告门",
     "www": [
       {
+        "title": "案例库",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/case_library/index"
+        ],
+        "target": "/adquan/case_library"
+      },
+      {
         "title": "最新文章",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -11582,9 +11590,9 @@
       }
     ]
   },
-  "domp4.cc": {
+  "xlmp4.com": {
     "_name": "DoMP4 影视",
-    ".": [
+    "www": [
       {
         "title": "剧集订阅",
         "docs": "https://docs.rsshub.app/routes/multimedia",
