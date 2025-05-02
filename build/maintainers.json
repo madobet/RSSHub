@@ -3433,7 +3433,10 @@
   "/hameln/chapter/:id": [
     "huangliangshusheng"
   ],
-  "/hanime1/previews/:date": [
+  "/hanime1/previews/:date?": [
+    "kjasn"
+  ],
+  "/hanime1/search/:params": [
     "kjasn"
   ],
   "/harvard/health/blog": [
