@@ -1,8 +1,7 @@
 import type { Namespace } from '@/types';
 
 export const namespace: Namespace = {
-    name: '飞客茶馆',
-    url: 'flyert.com.cn',
-    description: '',
+    name: '虫部落',
+    url: 'www.chongbuluo.com',
     lang: 'zh-CN',
 };
