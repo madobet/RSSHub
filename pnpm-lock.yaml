@@ -29,11 +29,11 @@ importers:
         specifier: 4.2.0
         version: 4.2.0
       '@hono/node-server':
-        specifier: 1.14.1
-        version: 1.14.1(hono@4.7.10)
+        specifier: 1.14.2
+        version: 1.14.2(hono@4.7.10)
       '@hono/zod-openapi':
         specifier: 0.19.6
-        version: 0.19.6(hono@4.7.10)(zod@3.24.4)
+        version: 0.19.6(hono@4.7.10)(zod@3.25.7)
       '@notionhq/client':
         specifier: 3.0.1
         version: 3.0.1
@@ -68,8 +68,8 @@ importers:
         specifier: 0.8.10
         version: 0.8.10(hono@4.7.10)
       '@sentry/node':
-        specifier: 9.19.0
-        version: 9.19.0
+        specifier: 9.20.0
+        version: 9.20.0
       '@tonyrl/rand-user-agent':
         specifier: 2.0.83
         version: 2.0.83
@@ -140,8 +140,8 @@ importers:
         specifier: 0.6.3
         version: 0.6.3
       imapflow:
-        specifier: 1.0.186
-        version: 1.0.186
+        specifier: 1.0.187
+        version: 1.0.187
       instagram-private-api:
         specifier: 1.46.1
         version: 1.46.1
@@ -284,8 +284,8 @@ importers:
         specifier: 13.4.0
         version: 13.4.0
       zod:
-        specifier: 3.24.4
-        version: 3.24.4
+        specifier: 3.25.7
+        version: 3.25.7
     devDependencies:
       '@babel/preset-env':
         specifier: 7.27.2
@@ -1433,8 +1433,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.9.0
 
-  '@hono/node-server@1.14.1':
-    resolution: {integrity: sha512-vmbuM+HPinjWzPe7FFPWMMQMsbKE9gDPhaH0FFdqbGpkT5lp++tcWDTxwBl5EgS5y6JVgIaCdjeHRfQ4XRBRjQ==}
+  '@hono/node-server@1.14.2':
+    resolution: {integrity: sha512-GHjpOeHYbr9d1vkID2sNUYkl5IxumyhDrUJB7wBp7jvqYwPFt+oNKsAPBRcdSbV7kIrXhouLE199ks1QcK4r7A==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -2293,16 +2293,16 @@ packages:
   '@selderee/plugin-htmlparser2@0.11.0':
     resolution: {integrity: sha512-P33hHGdldxGabLFjPPpaTxVolMrzrcegejx+0GxjrIb9Zv48D8yAIA/QTDR2dFl7Uz7urX8aX6+5bCZslr+gWQ==}
 
-  '@sentry/core@9.19.0':
-    resolution: {integrity: sha512-I41rKpMJHHZb0z0Nja+Lxto6IkEEmX3uWjnECypF8Z1HIjeJB0+PXl8p/7TeaKYqw2J2GYcRTg7jQZDmvKle1w==}
+  '@sentry/core@9.20.0':
+    resolution: {integrity: sha512-YPDGkcMc5w8JEPoqW1DqfcaxtSz8FyP6+Z2KqjoEfUtqnjPis7YGo06e+XBCFDE+yZwurHB0DeerVi0cE47pxg==}
     engines: {node: '>=18'}
 
-  '@sentry/node@9.19.0':
-    resolution: {integrity: sha512-WKVcUBy5Zc+LGvfV/CfGPBDfnmEOSxLCMYzXIhx0gUxf2+8WpMMc/8yW/25zbXMo3eC4oST4GBDSpTfNdMBz1w==}
+  '@sentry/node@9.20.0':
+    resolution: {integrity: sha512-mkPFqJhCIvKeLHFHo11wOQdaeFD1Fa5qkVelOjsojPEcLfuDYA6/plCgrXmgWCGn2T1GaO3cjmDdCpvMLjt5ow==}
     engines: {node: '>=18'}
 
-  '@sentry/opentelemetry@9.19.0':
-    resolution: {integrity: sha512-Js6153kW5mNjjukk6TVb04D/8DDhA9MO++WRzXWzNP+FiPi5zwtvm+Je2TvTeAjSH74f6o2JpfECdrfPYHWopA==}
+  '@sentry/opentelemetry@9.20.0':
+    resolution: {integrity: sha512-G758j6i1SdtcYOJElLW9jXzXviVK+4SeD+fIJFd919ZT+L/NgsioPr6536SrE+aK3luv6tluRJubh7lhqufLkA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@opentelemetry/api': ^1.9.0
@@ -4090,8 +4090,8 @@ packages:
     engines: {node: '>=6.9.0'}
     hasBin: true
 
-  imapflow@1.0.186:
-    resolution: {integrity: sha512-GrkuGsIJSzpQZvRCZQrGlAHdhaEE5K/0ybyu0lGLyEZLCjYoIQa+cPGCULX6Vf0kbG3sUDJDt46eNf6HG1dM9g==}
+  imapflow@1.0.187:
+    resolution: {integrity: sha512-h6C3isN+gsCncHZT9vh8DMRU9H1JPHXzkThj+xEwICXsRfX0fu2kMA2sVpl5a+rYuxr/d7uStm6hbWFsOlj44g==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -4926,10 +4926,6 @@ packages:
   node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
 
-  nodemailer@6.10.0:
-    resolution: {integrity: sha512-SQ3wZCExjeSatLE/HBaXS5vqUOQk6GtBdIIKxiFdmm01mOQZX/POJkO3SUX1wDiYcwUOJwT23scFSC9fY2H8IA==}
-    engines: {node: '>=6.0.0'}
-
   nodemailer@7.0.3:
     resolution: {integrity: sha512-Ajq6Sz1x7cIK3pN6KesGTah+1gnwMnx5gKl3piQlQQE/PwyJ4Mbc8is2psWYxK3RJTVeqsDaCv8ZzXLCDHMTZw==}
     engines: {node: '>=6.0.0'}
@@ -5179,8 +5175,8 @@ packages:
   pino-std-serializers@7.0.0:
     resolution: {integrity: sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==}
 
-  pino@9.6.0:
-    resolution: {integrity: sha512-i85pKRCt4qMjZ1+L7sy2Ag4t1atFcdbEt76+7iRJn1g2BvsnRMGu9p8pivl9fs63M2kF/A0OacFZhTub+m/qMg==}
+  pino@9.7.0:
+    resolution: {integrity: sha512-vnMCM6xZTb1WDmLvtG2lE/2p+t9hDEIvTWJsu6FejkE62vB7gDhvzrpFR4Cw2to+9JNQxVnkAKVPA1KPB98vWg==}
     hasBin: true
 
   pluralize@8.0.0:
@@ -5228,8 +5224,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  process-warning@4.0.1:
-    resolution: {integrity: sha512-3c2LzQ3rY9d0hc1emcsHhfT9Jwz0cChib/QN89oME2R451w5fy3f0afAhERFZAwrbDU43wk12d0ORBpDVME50Q==}
+  process-warning@5.0.0:
+    resolution: {integrity: sha512-a39t9ApHNx2L4+HBnQKqxxHNs1r7KF+Intd8Q/g1bUh6q0WIp9voPXJ/x0j+ZL45KF1pJd9+q2jLIRMfvEshkA==}
 
   progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
@@ -6451,8 +6447,8 @@ packages:
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
-  zod@3.24.4:
-    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+  zod@3.25.7:
+    resolution: {integrity: sha512-YGdT1cVRmKkOg6Sq7vY7IkxdphySKnXhaUmFI4r4FcuFVNgpCb9tZfNwXbT6BPjD5oz0nubFsoo9pIqKrDcCvg==}
 
 snapshots:
 
@@ -6469,10 +6465,10 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
 
-  '@asteasolutions/zod-to-openapi@7.3.0(zod@3.24.4)':
+  '@asteasolutions/zod-to-openapi@7.3.0(zod@3.25.7)':
     dependencies:
       openapi3-ts: 4.4.0
-      zod: 3.24.4
+      zod: 3.25.7
 
   '@babel/code-frame@7.0.0':
     dependencies:
@@ -7483,21 +7479,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@hono/node-server@1.14.1(hono@4.7.10)':
+  '@hono/node-server@1.14.2(hono@4.7.10)':
     dependencies:
       hono: 4.7.10
 
-  '@hono/zod-openapi@0.19.6(hono@4.7.10)(zod@3.24.4)':
+  '@hono/zod-openapi@0.19.6(hono@4.7.10)(zod@3.25.7)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.24.4)
-      '@hono/zod-validator': 0.5.0(hono@4.7.10)(zod@3.24.4)
+      '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.25.7)
+      '@hono/zod-validator': 0.5.0(hono@4.7.10)(zod@3.25.7)
       hono: 4.7.10
-      zod: 3.24.4
+      zod: 3.25.7
 
-  '@hono/zod-validator@0.5.0(hono@4.7.10)(zod@3.24.4)':
+  '@hono/zod-validator@0.5.0(hono@4.7.10)(zod@3.25.7)':
     dependencies:
       hono: 4.7.10
-      zod: 3.24.4
+      zod: 3.25.7
 
   '@humanfs/core@0.19.1': {}
 
@@ -8333,9 +8329,9 @@ snapshots:
       domhandler: 5.0.3
       selderee: 0.11.0
 
-  '@sentry/core@9.19.0': {}
+  '@sentry/core@9.20.0': {}
 
-  '@sentry/node@9.19.0':
+  '@sentry/node@9.20.0':
     dependencies:
       '@fastify/otel': https://codeload.github.com/getsentry/fastify-otel/tar.gz/ae3088d65e286bdc94ac5d722573537d6a6671bb(@opentelemetry/api@1.9.0)
       '@opentelemetry/api': 1.9.0
@@ -8368,13 +8364,13 @@ snapshots:
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.33.0
       '@prisma/instrumentation': 6.7.0(@opentelemetry/api@1.9.0)
-      '@sentry/core': 9.19.0
-      '@sentry/opentelemetry': 9.19.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)
+      '@sentry/core': 9.20.0
+      '@sentry/opentelemetry': 9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)
       import-in-the-middle: 1.13.2
     transitivePeerDependencies:
       - supports-color
 
-  '@sentry/opentelemetry@9.19.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)':
+  '@sentry/opentelemetry@9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/context-async-hooks': 1.30.1(@opentelemetry/api@1.9.0)
@@ -8382,7 +8378,7 @@ snapshots:
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.33.0
-      '@sentry/core': 9.19.0
+      '@sentry/core': 9.20.0
 
   '@sindresorhus/is@5.6.0': {}
 
@@ -10426,7 +10422,7 @@ snapshots:
 
   image-size@0.7.5: {}
 
-  imapflow@1.0.186:
+  imapflow@1.0.187:
     dependencies:
       encoding-japanese: 2.2.0
       iconv-lite: 0.6.3
@@ -10434,8 +10430,8 @@ snapshots:
       libmime: 5.3.6
       libqp: 2.1.1
       mailsplit: 5.4.3
-      nodemailer: 6.10.0
-      pino: 9.6.0
+      nodemailer: 7.0.3
+      pino: 9.7.0
       socks: 2.8.4
 
   import-fresh@3.3.1:
@@ -11319,8 +11315,6 @@ snapshots:
 
   node-releases@2.0.19: {}
 
-  nodemailer@6.10.0: {}
-
   nodemailer@7.0.3: {}
 
   nopt@7.2.1:
@@ -11599,14 +11593,14 @@ snapshots:
 
   pino-std-serializers@7.0.0: {}
 
-  pino@9.6.0:
+  pino@9.7.0:
     dependencies:
       atomic-sleep: 1.0.0
       fast-redact: 3.5.0
       on-exit-leak-free: 2.1.2
       pino-abstract-transport: 2.0.0
       pino-std-serializers: 7.0.0
-      process-warning: 4.0.1
+      process-warning: 5.0.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.5.0
@@ -11663,7 +11657,7 @@ snapshots:
 
   prettier@3.5.3: {}
 
-  process-warning@4.0.1: {}
+  process-warning@5.0.0: {}
 
   progress@2.0.3: {}
 
@@ -12936,4 +12930,4 @@ snapshots:
 
   zod@3.24.1: {}
 
-  zod@3.24.4: {}
+  zod@3.25.7: {}
