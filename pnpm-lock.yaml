@@ -33,7 +33,7 @@ importers:
         version: 1.14.2(hono@4.7.10)
       '@hono/zod-openapi':
         specifier: 0.19.6
-        version: 0.19.6(hono@4.7.10)(zod@3.25.7)
+        version: 0.19.6(hono@4.7.10)(zod@3.25.13)
       '@notionhq/client':
         specifier: 3.0.1
         version: 3.0.1
@@ -56,8 +56,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions':
-        specifier: 1.33.0
-        version: 1.33.0
+        specifier: 1.33.1
+        version: 1.33.1
       '@postlight/parser':
         specifier: 2.2.3
         version: 2.2.3
@@ -284,8 +284,8 @@ importers:
         specifier: 13.4.0
         version: 13.4.0
       zod:
-        specifier: 3.25.7
-        version: 3.25.7
+        specifier: 3.25.13
+        version: 3.25.13
     devDependencies:
       '@babel/preset-env':
         specifier: 7.27.2
@@ -330,8 +330,8 @@ importers:
         specifier: 9.0.4
         version: 9.0.4
       '@types/imapflow':
-        specifier: 1.0.21
-        version: 1.0.21
+        specifier: 1.0.22
+        version: 1.0.22
       '@types/js-beautify':
         specifier: 1.14.3
         version: 1.14.3
@@ -357,8 +357,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4
       '@types/node':
-        specifier: 22.15.19
-        version: 22.15.19
+        specifier: 22.15.21
+        version: 22.15.21
       '@types/sanitize-html':
         specifier: 2.16.0
         version: 2.16.0
@@ -382,7 +382,7 @@ importers:
         version: 0.29.3(rollup@4.40.2)
       '@vitest/coverage-v8':
         specifier: 2.1.9
-        version: 2.1.9(vitest@2.1.9(@types/node@22.15.19)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)))
+        version: 2.1.9(vitest@2.1.9(@types/node@22.15.21)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)))
       discord-api-types:
         specifier: 0.38.8
         version: 0.38.8
@@ -460,10 +460,10 @@ importers:
         version: 11.0.5
       vite-tsconfig-paths:
         specifier: 5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@5.4.19(@types/node@22.15.19)(lightningcss@1.29.3))
+        version: 5.1.4(typescript@5.8.3)(vite@5.4.19(@types/node@22.15.21)(lightningcss@1.29.3))
       vitest:
         specifier: 2.1.9
-        version: 2.1.9(@types/node@22.15.19)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3))
+        version: 2.1.9(@types/node@22.15.21)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3))
       yaml-eslint-parser:
         specifier: 1.3.0
         version: 1.3.0
@@ -1860,8 +1860,8 @@ packages:
     resolution: {integrity: sha512-lp4qAiMTD4sNWW4DbKLBkfiMZ4jbAboJIGOQr5DvciMRI494OapieI9qiODpOt0XBr1LjIDy1xAGAnVs5supTA==}
     engines: {node: '>=14'}
 
-  '@opentelemetry/semantic-conventions@1.33.0':
-    resolution: {integrity: sha512-TIpZvE8fiEILFfTlfPnltpBaD3d9/+uQHVCyC3vfdh6WfCXKhNFzoP5RyDDIndfvZC5GrA4pyEDNyjPloJud+w==}
+  '@opentelemetry/semantic-conventions@1.33.1':
+    resolution: {integrity: sha512-tBco+nVMoGqJ0LHPKOWlN9o1PX2AA9zxDMgvL210YYXlG9UkMXpiXhsWvvQriZrjOzTXXEpH6jleCgAuVGg3EQ==}
     engines: {node: '>=14'}
 
   '@opentelemetry/sql-common@0.40.1':
@@ -2388,8 +2388,8 @@ packages:
   '@types/http-cache-semantics@4.0.4':
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
 
-  '@types/imapflow@1.0.21':
-    resolution: {integrity: sha512-7ZqYx+PX2bKs4DLP/tUlCWjlmIFJh6wBNte+94TTurUzIL2wlldJcXJEwzxMfhP6T6ppKY/XFTIcYoWh/vsrUg==}
+  '@types/imapflow@1.0.22':
+    resolution: {integrity: sha512-rkp/PNcyP3pjAtC9cHxIAtyswVksu/MEWbN1D7/mpaxCfRl+xR8pgxutvnQV4IG+VCtntAXu1ke8N+IWwZNYVA==}
 
   '@types/js-beautify@1.14.3':
     resolution: {integrity: sha512-FMbQHz+qd9DoGvgLHxeqqVPaNRffpIu5ZjozwV8hf9JAGpIOzuAf4wGbRSo8LNITHqGjmmVjaMggTT5P4v4IHg==}
@@ -2442,8 +2442,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@22.15.19':
-    resolution: {integrity: sha512-3vMNr4TzNQyjHcRZadojpRaD9Ofr6LsonZAoQ+HMUa/9ORTPoxVIw0e0mpqWpdjj8xybyCM+oKOUH2vwFu/oEw==}
+  '@types/node@22.15.21':
+    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
 
   '@types/pg-pool@2.0.6':
     resolution: {integrity: sha512-TaAUE5rq2VQYxab5Ts7WZhKNmuN78Q6PiFonTDdpbx8a1H0M1vhy3rhiMjl+e2iHmogyMw7jZF4FrE6eJUy5HQ==}
@@ -6447,8 +6447,8 @@ packages:
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
-  zod@3.25.7:
-    resolution: {integrity: sha512-YGdT1cVRmKkOg6Sq7vY7IkxdphySKnXhaUmFI4r4FcuFVNgpCb9tZfNwXbT6BPjD5oz0nubFsoo9pIqKrDcCvg==}
+  zod@3.25.13:
+    resolution: {integrity: sha512-Q8mvk2iWi7rTDfpQBsu4ziE7A6AxgzJ5hzRyRYQkoV3A3niYsXVwDaP1Kbz3nWav6S+VZ6k2OznFn8ZyDHvIrg==}
 
 snapshots:
 
@@ -6465,10 +6465,10 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
 
-  '@asteasolutions/zod-to-openapi@7.3.0(zod@3.25.7)':
+  '@asteasolutions/zod-to-openapi@7.3.0(zod@3.25.13)':
     dependencies:
       openapi3-ts: 4.4.0
-      zod: 3.25.7
+      zod: 3.25.13
 
   '@babel/code-frame@7.0.0':
     dependencies:
@@ -7474,7 +7474,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       minimatch: 9.0.5
     transitivePeerDependencies:
       - supports-color
@@ -7483,17 +7483,17 @@ snapshots:
     dependencies:
       hono: 4.7.10
 
-  '@hono/zod-openapi@0.19.6(hono@4.7.10)(zod@3.25.7)':
+  '@hono/zod-openapi@0.19.6(hono@4.7.10)(zod@3.25.13)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.25.7)
-      '@hono/zod-validator': 0.5.0(hono@4.7.10)(zod@3.25.7)
+      '@asteasolutions/zod-to-openapi': 7.3.0(zod@3.25.13)
+      '@hono/zod-validator': 0.5.0(hono@4.7.10)(zod@3.25.13)
       hono: 4.7.10
-      zod: 3.25.7
+      zod: 3.25.13
 
-  '@hono/zod-validator@0.5.0(hono@4.7.10)(zod@3.25.7)':
+  '@hono/zod-validator@0.5.0(hono@4.7.10)(zod@3.25.13)':
     dependencies:
       hono: 4.7.10
-      zod: 3.25.7
+      zod: 3.25.13
 
   '@humanfs/core@0.19.1': {}
 
@@ -7533,7 +7533,7 @@ snapshots:
       '@inquirer/figures': 1.0.11
       '@inquirer/type': 2.0.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -7696,7 +7696,7 @@ snapshots:
   '@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
 
   '@opentelemetry/exporter-prometheus@0.201.1(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -7719,7 +7719,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7728,7 +7728,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@types/connect': 3.4.38
     transitivePeerDependencies:
       - supports-color
@@ -7745,7 +7745,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7776,7 +7776,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7796,7 +7796,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/redis-common': 0.36.2
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7804,7 +7804,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7812,7 +7812,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7821,7 +7821,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7836,7 +7836,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7845,7 +7845,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7853,7 +7853,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@opentelemetry/sql-common': 0.40.1(@opentelemetry/api@1.9.0)
     transitivePeerDependencies:
       - supports-color
@@ -7862,7 +7862,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@types/mysql': 2.15.26
     transitivePeerDependencies:
       - supports-color
@@ -7872,7 +7872,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@opentelemetry/sql-common': 0.40.1(@opentelemetry/api@1.9.0)
       '@types/pg': 8.6.1
       '@types/pg-pool': 2.0.6
@@ -7884,7 +7884,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/redis-common': 0.36.2
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
     transitivePeerDependencies:
       - supports-color
 
@@ -7892,7 +7892,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@types/tedious': 4.0.14
     transitivePeerDependencies:
       - supports-color
@@ -7946,7 +7946,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
 
   '@opentelemetry/sdk-logs@0.201.1(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -7973,11 +7973,11 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.0.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
 
   '@opentelemetry/semantic-conventions@1.28.0': {}
 
-  '@opentelemetry/semantic-conventions@1.33.0': {}
+  '@opentelemetry/semantic-conventions@1.33.1': {}
 
   '@opentelemetry/sql-common@0.40.1(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -8362,22 +8362,22 @@ snapshots:
       '@opentelemetry/instrumentation-undici': 0.10.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@prisma/instrumentation': 6.7.0(@opentelemetry/api@1.9.0)
       '@sentry/core': 9.20.0
-      '@sentry/opentelemetry': 9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)
+      '@sentry/opentelemetry': 9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.1)
       import-in-the-middle: 1.13.2
     transitivePeerDependencies:
       - supports-color
 
-  '@sentry/opentelemetry@9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.0)':
+  '@sentry/opentelemetry@9.20.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.1)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/context-async-hooks': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.0
+      '@opentelemetry/semantic-conventions': 1.33.1
       '@sentry/core': 9.20.0
 
   '@sindresorhus/is@5.6.0': {}
@@ -8421,7 +8421,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/cookie@0.6.0': {}
 
@@ -8442,26 +8442,26 @@ snapshots:
 
   '@types/etag@1.8.3':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/html-to-text@9.0.4': {}
 
   '@types/http-cache-semantics@4.0.4': {}
 
-  '@types/imapflow@1.0.21':
+  '@types/imapflow@1.0.22':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/js-beautify@1.14.3': {}
 
   '@types/jsdom@21.1.7':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       '@types/tough-cookie': 4.0.5
       parse5: 7.3.0
 
@@ -8471,7 +8471,7 @@ snapshots:
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/jsrsasign@10.5.13': {}
 
@@ -8481,7 +8481,7 @@ snapshots:
 
   '@types/mailparser@3.4.6':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       iconv-lite: 0.6.3
 
   '@types/markdown-it@14.1.2':
@@ -8503,13 +8503,13 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/mysql@2.15.26':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
-  '@types/node@22.15.19':
+  '@types/node@22.15.21':
     dependencies:
       undici-types: 6.21.0
 
@@ -8519,7 +8519,7 @@ snapshots:
 
   '@types/pg@8.6.1':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       pg-protocol: 1.10.0
       pg-types: 2.2.0
 
@@ -8531,7 +8531,7 @@ snapshots:
   '@types/request@2.48.12':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.3
 
@@ -8547,7 +8547,7 @@ snapshots:
     dependencies:
       '@types/cookiejar': 2.1.5
       '@types/methods': 1.1.4
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       form-data: 4.0.2
 
   '@types/supertest@6.0.3':
@@ -8557,7 +8557,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
 
   '@types/title@3.4.3': {}
 
@@ -8573,7 +8573,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.32.1(@typescript-eslint/parser@8.32.1(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)':
@@ -8715,7 +8715,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@22.15.19)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)))':
+  '@vitest/coverage-v8@2.1.9(vitest@2.1.9(@types/node@22.15.21)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -8729,7 +8729,7 @@ snapshots:
       std-env: 3.9.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.9(@types/node@22.15.19)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3))
+      vitest: 2.1.9(@types/node@22.15.21)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -8740,14 +8740,14 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.9(msw@2.4.3(typescript@5.8.3))(vite@5.4.19(@types/node@22.15.19)(lightningcss@1.29.3))':
+  '@vitest/mocker@2.1.9(msw@2.4.3(typescript@5.8.3))(vite@5.4.19(@types/node@22.15.21)(lightningcss@1.29.3))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
       msw: 2.4.3(typescript@5.8.3)
-      vite: 5.4.19(@types/node@22.15.19)(lightningcss@1.29.3)
+      vite: 5.4.19(@types/node@22.15.21)(lightningcss@1.29.3)
 
   '@vitest/pretty-format@2.1.9':
     dependencies:
@@ -11675,7 +11675,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       long: 5.3.2
 
   proxy-agent@6.4.0:
@@ -12668,13 +12668,13 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite-node@2.1.9(@types/node@22.15.19)(lightningcss@1.29.3):
+  vite-node@2.1.9(@types/node@22.15.21)(lightningcss@1.29.3):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
       es-module-lexer: 1.7.0
       pathe: 1.1.2
-      vite: 5.4.19(@types/node@22.15.19)(lightningcss@1.29.3)
+      vite: 5.4.19(@types/node@22.15.21)(lightningcss@1.29.3)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -12686,31 +12686,31 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@5.4.19(@types/node@22.15.19)(lightningcss@1.29.3)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@5.4.19(@types/node@22.15.21)(lightningcss@1.29.3)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.8.3)
     optionalDependencies:
-      vite: 5.4.19(@types/node@22.15.19)(lightningcss@1.29.3)
+      vite: 5.4.19(@types/node@22.15.21)(lightningcss@1.29.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.4.19(@types/node@22.15.19)(lightningcss@1.29.3):
+  vite@5.4.19(@types/node@22.15.21)(lightningcss@1.29.3):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.3
       rollup: 4.40.2
     optionalDependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       fsevents: 2.3.3
       lightningcss: 1.29.3
 
-  vitest@2.1.9(@types/node@22.15.19)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)):
+  vitest@2.1.9(@types/node@22.15.21)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(lightningcss@1.29.3)(msw@2.4.3(typescript@5.8.3)):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(msw@2.4.3(typescript@5.8.3))(vite@5.4.19(@types/node@22.15.19)(lightningcss@1.29.3))
+      '@vitest/mocker': 2.1.9(msw@2.4.3(typescript@5.8.3))(vite@5.4.19(@types/node@22.15.21)(lightningcss@1.29.3))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -12726,11 +12726,11 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 1.2.0
-      vite: 5.4.19(@types/node@22.15.19)(lightningcss@1.29.3)
-      vite-node: 2.1.9(@types/node@22.15.19)(lightningcss@1.29.3)
+      vite: 5.4.19(@types/node@22.15.21)(lightningcss@1.29.3)
+      vite-node: 2.1.9(@types/node@22.15.21)(lightningcss@1.29.3)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       jsdom: 26.1.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - less
@@ -12930,4 +12930,4 @@ snapshots:
 
   zod@3.24.1: {}
 
-  zod@3.25.7: {}
+  zod@3.25.13: {}
